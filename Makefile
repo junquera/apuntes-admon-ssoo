@@ -1,7 +1,7 @@
 OUTPUT_NAME="ssoo"
 
 # SESIONS=$(echo S{0..3}.md)
-SESIONS = S0.md S1.md S2.md S3.md
+SESIONS = S0.md S1.md S2.md S3.md S4.md S5.md S6.md
 EXTRAS = T1.md
 
 all:

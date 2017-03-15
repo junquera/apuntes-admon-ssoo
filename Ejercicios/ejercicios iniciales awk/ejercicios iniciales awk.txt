@@ -1,0 +1,11 @@
+     1	Mostrar la shell de todos los usuarios cuyo UID sea mayor de 1000
+     2	Mostrar todos los PIDs de los procesos del usuario root
+     3	Mostrar el tamaño de todos los archivos normales que hay recursivamente a partir del directorio de conexión del modo: NombreArchivo -> Tamaño
+     4	Mostrar el archivo de tamaño máximo, mínimo y el número de entradas que hay en un directorio
+     5	Añadir al ejercicio anterior la posibilidad de mostrar esa información sólo de archivos de tipo normal o de todos los archivos, dependiendo de un argumento que se pase como una variable
+     6	Hacer un programa que muestre las IPs correctas que haya en un archivo. Se tiene que comportar igual que el ejercicio de Shell
+     7	Utilizando la variable FILENAME de AWK, que indica el archivo de entrada que está procesando la orden awk, combine los tres archivos indicados a continuación (que no tienen ningún tipo de orden) para generar una salida del tipo Nombre Apellido -> Nota media
+     8	Archivo Nota1: Contiene un listado de DNIs y notas del Parcial 1 (una línea sería del tipo: 12345678V-8)
+     9	Archivo Nota2: Contiene un listado de DNIs y notas del Parcial 2 (una línea sería del tipo: 12345678V-3)
+    10	Archivo Alumnos: Contiene un listado de DNIs y nombres (una línea sería del tipo: 12345678V-Fulanito Pérez)
+    11	Resultado para ese alumno: Fulanito Pérez -> 5,5
