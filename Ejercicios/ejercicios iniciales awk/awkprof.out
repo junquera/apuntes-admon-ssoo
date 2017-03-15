@@ -1,0 +1,8 @@
+	# perfil de gawk, creado Wed Mar 15 11:56:30 2017
+
+	# Regla(s)
+
+    21  /^$)/ {
+		print $0
+	}
+
