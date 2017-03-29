@@ -1,0 +1,20 @@
+Defaults	insults
+
+User_Alias	GESTORES = gestor, gestor-usuarios
+
+Runas_Alias	ROOT = root
+
+Cmnd_Alias	MANAGE_USER = /usr/sbin/adduser, /usr/sbin/deluser
+
+gestor ALL=(ROOT) NOPASSWD: ALL
+gestor-usuarios ALL=(ALL:ALL) NOPASSWD: MANAGE_USER, NOEXEC: /usr/bin/vi
+%						     ^^^^^^
+% Esto sólo es un ejemplo de que hay que 'capar' determinados comandos que permiten
+% ejecutar órdenes ( por ejemplo, en vi con :!ORDEN )
+
+% Esto vuelve a configurar los permisos para todos los ejecutables:
+% no indica que no haga falta pedir contraseña, indica que se puede  
+% ejecutar sin contraseña
+%
+% GESTORES ALL = NOPASSWD: ALL
+%			   ^^^
