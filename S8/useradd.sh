@@ -60,5 +60,5 @@ echo "/etc/group"
 echo $USER:x:$S_GID: | tee -a /etc/group
 
 echo "Making $DIR"
-mkdir cp -r /etc/skel $DIR
+cp -r /etc/skel $DIR
 
