@@ -1,3 +1,6 @@
+#!/bin/bash
+# Ejercicio 4
+
 ORDENES=('for' 'while' 'until' 'exit')
 myFor(){
 	return
@@ -16,7 +19,7 @@ myExit(){
 }
 
 main(){
-	select ORD in ${ORDENES[@]} 
+	select ORD in ${ORDENES[@]}
 	do
 		case $ORD in
 			'for')

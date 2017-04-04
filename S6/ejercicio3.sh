@@ -1,3 +1,6 @@
+#!/bin/bash
+# Ejercicio 3
+
 myFor(){
 	return
 }

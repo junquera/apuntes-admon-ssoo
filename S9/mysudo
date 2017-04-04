@@ -1,3 +1,5 @@
+% My SUDO config
+
 Defaults	insults
 
 User_Alias	GESTORES = gestor, gestor-usuarios
@@ -13,7 +15,7 @@ gestor-usuarios ALL=(ALL:ALL) NOPASSWD: MANAGE_USER, NOEXEC: /usr/bin/vi
 % ejecutar órdenes ( por ejemplo, en vi con :!ORDEN )
 
 % Esto vuelve a configurar los permisos para todos los ejecutables:
-% no indica que no haga falta pedir contraseña, indica que se puede  
+% no indica que no haga falta pedir contraseña, indica que se puede
 % ejecutar sin contraseña
 %
 % GESTORES ALL = NOPASSWD: ALL

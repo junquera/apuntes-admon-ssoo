@@ -24,7 +24,7 @@ S6_TEMA:
 	cat S6.md >> S6_tmp.md
 
 S6_EJERCICIOS:
-	cat ejercicios.txt ejercicio1.sh
+	cat S6/ejercicios.md S6/ejercicio1.sh S6/ejercicio2.sh S6/ejercicio3.sh S6/ejercicio4.sh >> res.md
 
 S6: S6_TEMA S6_EJERCICIOS
 	cat S6_tmp.md >> res.md
@@ -38,17 +38,23 @@ S8_TEMA:
 S8: S8_TEMA
 	cat S8_tmp.md >> res.md
 
-S9:
-	cat S9.md >> res.md
+S9_TEMA:
+	cat S9.md >> S9_tmp.md
+
+S9_EJERCICIOS:
+	cat S9/mysudo >> S9_tmp.md
+
+S9: S9_TEMA S9_EJERCICIOS
+	cat S9_tmp.md >> res.md
 
 EXTRAS_1:
 	cat T1.md >> res.md
 
 all: S1 S2 S3 S4 S5 S6 S7 S8 S9
-	pandoc ${SESIONS} ${EXTRAS} -o ${OUTPUT_NAME}.pdf
+	pandoc res.md -o ${OUTPUT_NAME}.pdf
 
 teoria: S1 S2 S3 S4 S5 S6_TEMA S8_TEMA S9_TEMA
 	pandoc res.md -O ${OUTPUT_NAME}.pdf
 
 clean:
-	rm '*_tmp.md' res.md
+	rm *_tmp.md res.md

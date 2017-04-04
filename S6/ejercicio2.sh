@@ -1,3 +1,6 @@
+#!/bin/bash
+# Ejercicio 2
+
 if [ $# -lt 1 ]; then
 	echo "[ERROR]	Mínimo un argumentos";
 else

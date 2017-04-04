@@ -1,3 +1,5 @@
+### Ejercicios T6
+
 1) Crear un shell script que muestre en líneas separadas cada uno de los parámetros que reciba. Teniendo en cuenta que:
 
 - Recibe un primer parámetro (que debe ser for, while o until) que indica la orden a utilizar para generar la salidad del resto de parámetros.
@@ -6,11 +8,12 @@
 
 - Debe utilizar un case para seleccionar el código a ejecutar (con for, con while o con until) y no utilizar funciones.
 
-
+``` bash
 $> miScript for uno dos tres
 uno
 dos
 tres
+```
 
 2) Añadir y modificar lo necesario al script anterior para utilizar la orden select en lugar del argumento 1 para indicar la orden a a utilizar (while, for o until), incluyendo una opción para finalizar
 

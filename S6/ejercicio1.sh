@@ -1,17 +1,20 @@
+#!/bin/bash
+# Ejercicio 1
+
 if [ $# -lt 2 ]; then
 	echo "[ERROR]	Mínimo dos argumentos";
 else
-	case $1 in 
-		'for');; 
-		'while');; 
+	case $1 in
+		'for');;
+		'while');;
 		'until');;
 		*)
 			echo "[ERROR]	El primer argumento debe ser for, while o until"
-			exit -1 
+			exit -1
 		;;
 	esac
-	
-	shift	
+
+	shift
 	while [ $# -gt 0 ];
 	do
 		echo $1
